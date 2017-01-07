@@ -1,0 +1,208 @@
+/*
+Theme Name: ElementSoftworks2017
+Author: Luke Brown
+Description: The Element Softworks website theme
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+body {
+	font-family: "proxima-nova",sans-serif;
+	color: #555;
+	background: #f1f1f1;
+}
+
+.animate {
+	-webkit-transition: all 1s !important;
+	-moz-transition: all 1s !important;
+	-ms-transition: all 1s !important;
+	-o-transition: all 1s !important;
+	transition: all 1s !important;
+}
+
+.navbar {
+	background: #222222;
+	border-radius: 0;
+	margin-bottom: 0;
+	border: transparent;
+	.navbar-brand {
+		height: 80px;
+		img {
+			display: inline-block;
+			height: 50px;
+		}
+		span {
+			font-family: "proxima-nova",sans-serif;
+			font-size: 35px;
+			font-weight: 300;
+			vertical-align: middle;
+			color: white;
+			padding-left: 5px;
+		}
+	}
+	.navbar-nav {
+		li {
+			a {
+				font-weight: 300;
+				text-transform: uppercase;
+				@extend .animate;
+			}
+		}
+
+		#searchform {
+			padding: 20px;
+			@extend .animate;
+
+			.screen-reader-text {
+				display: none;
+			}
+
+			#s {
+				background: #333;
+				border: #333;
+				color: white;
+				padding: 10px 15px;
+				font-weight: 300;
+			}
+
+			#searchsubmit {
+				padding: 10px;
+				background: #333;
+				border: 0;
+				color: #aaa;
+				font-weight: 300;
+				@extend .animate;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+
+	&.navbar-bottom {
+		background: #333333;
+		margin-bottom: 30px;
+		#navbar {
+			margin-left: -30px;
+		}
+	}
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-top: 0;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+
+
+
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.blog-title {
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: 60px;
+	font-weight: normal;
+}
+.blog-description {
+	font-size: 20px;
+	color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+	padding: 15px;
+	margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+	padding: 15px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+	margin-bottom: 60px;
+	text-align: left;
+}
+.pager > li > a {
+	width: 140px;
+	padding: 10px 20px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+	margin-bottom: 60px;
+}
+.blog-post-title {
+	margin-bottom: 5px;
+	font-size: 40px;
+}
+.blog-post-meta {
+	margin-bottom: 20px;
+	color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+	padding: 40px 0;
+	color: #999;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+
+
+.blog-nav li {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	font-weight: 500;
+}
+.blog-nav li a {
+	color: #fff;
+}
