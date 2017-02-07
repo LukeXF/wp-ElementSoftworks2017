@@ -21,10 +21,10 @@ body {
 }
 
 .navbar {
-	background: #222222;
+	background: transparent;
 	border-radius: 0;
-	margin-bottom: 0;
 	border: transparent;
+	margin-bottom: -80px;
 	.navbar-brand {
 		height: 80px;
 		img {
@@ -89,6 +89,137 @@ body {
 	}
 }
 
+
+.jumbotron {
+	background: url(http://hotbrassmedia.com/assets/img/photoshoot3.png);
+	background-size: cover;
+	padding-top: 200px;
+	text-align: center;
+	padding-bottom: 150px;
+
+	h1 {
+		font-size: 100px;
+		font-weight: 100;
+		color: white;
+	}
+
+	p {
+		color: white;
+	}
+
+}
+
+.intro {
+	padding-bottom: 20px;
+	text-align: center;
+}
+.tile {
+	min-height: 100px;
+	background: white;
+	margin: -12px -5px 20px;
+	text-align: center;
+	padding: 40px;
+	border: 1px solid #eee;
+	@extend .animate;
+
+	hr {
+		@extend .animate;
+	}
+	h2 {
+		margin-top: 20px;
+		font-weight: 300;
+	}
+
+	h5 {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 11px;
+		color: #aaa;
+		letter-spacing: 1px;
+		@extend .animate;
+	}
+
+	p {
+		color: #6c6c6c;
+		font-weight: 300;
+		padding: 10px;
+	}
+
+	.row-item {
+		margin: 50px -41px -41px;
+		border: 1px solid #eee;
+		background: #fafafa;
+		@extend .animate;
+
+		div[class^="item-"], div[class*="item-"] {
+			background-size: cover;
+			height: 100px;
+			opacity: 0.4;
+			@extend .animate;
+
+			.info-box {
+				background: #fff;
+				border: 1px solid #999;
+				margin: 32px 0;
+				padding: 10px 26px;
+				white-space: nowrap;
+				opacity: 0;
+				min-height: 19px;
+				text-transform: uppercase;
+				font-weight: bold;
+				display: inline-block;
+				font-size: 11px;
+				color: #333;
+				@extend .animate;
+			}
+		}
+	}
+
+	&:hover {
+		border: 1px solid #999;
+
+		hr {
+			border-top: 1px solid #999;
+	}
+		.btn {
+			border: 1px solid #999;
+		}
+
+		&.tile-dev {
+			.colour {
+				color: #3598dc;
+			}
+		}
+
+		&.tile-products {
+			.colour {
+				color: #2fcc71;
+			}
+		}
+		&.tile-challenge {
+			.colour {
+				color: #8f44ad;
+			}
+		}
+		.row-item {
+			border: 1px solid #999;
+			div[class^="item-"], div[class*="item-"] {
+				opacity: 0.7;
+
+				&:hover {
+					opacity: 1;
+					.info-box {
+						opacity: 1;
+						text-decoration: none;
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -101,6 +232,17 @@ h6, .h6 {
 	color: #333;
 }
 
+.btn {
+	border-radius: 0;
+	border: 1px solid #eee;
+	padding: 10px 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #aaa;
+	letter-spacing: 1px;
+	@extend .animate;
+}
 
 
 
@@ -184,25 +326,148 @@ h6, .h6 {
 /*
  * Footer
  */
+.main-footer {
+	background-color: #292929;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+	color: #eee;
 
-.blog-footer {
-	padding: 40px 0;
-	color: #999;
+	.main {
+		text-align: center;
+		color: #eee;
+		padding: 20px;
+		font-weight: 300;
+		z-index: 20;
+		position: relative;
+	}
+}
+
+.form-horizontal .form-group {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.form-control {
+	background-color: #333;
+	border: 0;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.07),inset 1px 1px 1px rgba(0,0,0,0.07);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.07), inset 1px 1px 1px rgba(0,0,0,0.07);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.07), inset 1px 1px 1px rgba(0,0,0,0.07);
+	border-radius: 5px;
+	font-weight: 300;
+	font-size: 18px;
+	height: 40px;
+	padding: 25px;
+	color: #eee;
+}
+
+textarea#msg {
+	min-height: 180px;
+	max-height: 180px;
+	height: 180px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/* ////////////////////////////////////
+    TWITTER STYLING
+//////////////////////////////////// */
+
+.twitter {
+	width: 100%;
+	display: inline-table;
 	text-align: center;
-	background-color: #f9f9f9;
-	border-top: 1px solid #e5e5e5;
-}
-.blog-footer p:last-child {
-	margin-bottom: 0;
+	margin-top: -80px;
 }
 
 
-.blog-nav li {
-	position: relative;
-	display: inline-block;
-	padding: 10px;
-	font-weight: 500;
+.twittername {
+	margin: auto;
+	background: #222;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+	padding: 15px;
+	height: 79px;
+	color: #eee;
 }
-.blog-nav li a {
+
+
+.twittername span{
+
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.twitterlogo {
+	border-radius: 50px;
+	margin: auto;
+	display: -webkit-box;
+	width: 50px;
+}
+
+.twitterfollow {
+	margin: auto;
+	background: #222;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	padding: 15px;
+	height: 79px;
+}
+
+.twittername b {
+	font-size: 15px;
+	display: -webkit-inline-box;
+	float: left;
+	position: absolute;
+	left: 0;
+	margin-top: 29px;
+	margin-left: 89px;
+}
+
+.twittername span {
+	margin-top: 4px;
+}
+
+.twittername img {
+	float: left;
+}
+
+.twitter .item {
+	font-size: 20px;
+	line-height: 23px;
+	min-height: 60px;
+	max-height: 80px;
+	overflow: hidden;
+}
+
+.twitterfollow a {
+	background: rgb(56, 53, 48);
+	color: #eee;
+	padding: 14px 50px;
+	font-size: 20px;
+	border-radius: 50px;
+	float: right;
+}
+
+.twitterfollow a:hover,
+.twitterfollow a:focus {
+	color: #ddd;
+	text-decoration: none;
+}
+
+.twitterfollow a:active {
 	color: #fff;
+	text-decoration: none;
+}
+
+.twittercontent {
+	background: rgba(34, 34, 34, 0.59);
+	padding: 20px 50px;
+	box-shadow: 0px 2px 30px #383838;
+}
+
+.twitter .carousel-indicators {
+	bottom: -185;
+	z-index: 9999;
 }
