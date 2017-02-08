@@ -7,6 +7,7 @@
 	</div>
 </div>
 
+<div class="bg-white">
 	<div class="row" style="margin: 5px;">
 
 		<h1 class="intro">So, what do we do?</h1>
@@ -87,7 +88,80 @@
 		</div>
 
 	</div>
+</div>
 
+<div class="bg-grey">
+	<div class="row" style="margin: 5px;">
+		<h1 class="intro">What do people say about us?</h1>
+
+		<div class="col-md-3">
+			<div class="tile tile-test">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive img-circle" src="//i.imgur.com/ZUEwaja.jpg">
+					</div>
+					<h3>Gunsdaily</h3>
+					<h5>1.6 million followers</h5>
+					<p>Hi</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="tile tile-test">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive img-circle" src="//i.imgur.com/6ds4cbQ.jpg">
+					</div>
+					<h3>Black Wolf Inc</h3>
+					<h5>515 thousand followers</h5>
+					<p>Hi</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="tile tile-test">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive img-circle" src="//i.imgur.com/xcDJ8YJ.jpg">
+					</div>
+					<h3>The AK Guy</h3>
+					<h5>16 thousand followers</h5>
+					<p>Hi</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="tile tile-test">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive img-circle" src="//i.imgur.com/CIbZvYF.jpg">
+					</div>
+					<h3>Dragon Tactical</h3>
+					<h5>42 thousand followers</h5>
+					<p>Hi</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="tile tile-test">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive img-circle" src="//i.imgur.com/CIbZvYF.jpg">
+					</div>
+					<h3>Dragon Tactical</h3>
+					<h5>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</h5>
+					<p>Hi</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!--
 	<div class="row">
 		<div class="col-sm-12">
@@ -140,22 +214,6 @@
 
 			<?php endif; ?>
 -->
-<?php get_header(); ?>
-
-	<div class="row">
-		<div class="col-sm-12">
-
-			<?php
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-				get_template_part( 'content', get_post_format() );
-
-			endwhile; endif;
-			?>
-
-		</div> <!-- /.col -->
-	</div> <!-- /.row -->
-
 
 
 <?php get_footer(); ?>

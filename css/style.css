@@ -119,6 +119,10 @@ body {
         display: inline-block;
         font-size: 11px;
         color: #333; }
+  .tile.tile-test img {
+    max-width: 90px;
+    border: 2px solid #eee;
+    margin: 0 auto 10px; }
   .tile:hover {
     border: 1px solid #999; }
     .tile:hover hr {
@@ -162,6 +166,15 @@ h6, .h6 {
   font-size: 11px;
   color: #aaa;
   letter-spacing: 1px; }
+
+.bg-white {
+  padding: 40px 0; }
+
+.bg-grey {
+  background: #333;
+  padding: 40px 0; }
+  .bg-grey .intro {
+    color: white; }
 
 /*
  * Blog name and description
@@ -274,7 +287,7 @@ textarea#msg {
   width: 100%;
   display: inline-table;
   text-align: center;
-  margin-top: -80px; }
+  margin-top: -40px; }
 
 .twittername {
   margin: auto;
